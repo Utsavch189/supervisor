@@ -54,12 +54,13 @@ sudo supervisorctl restart all
 sudo vim /etc/supervisor/supervisord.conf
 ```
 
-```sh
-[inet_http_server]
-port = 127.0.0.1:9001
-username = user
-password = pass
-```
+### Add in supervisord.conf
+<b>
+[inet_http_server]<br>
+port = 127.0.0.1:9001<br>
+username = user<br>
+password = pass<br>
+</b>
 
 ```sh
 sudo systemctl restart supervisor

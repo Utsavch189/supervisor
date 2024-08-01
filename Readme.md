@@ -61,6 +61,7 @@ port = 127.0.0.1:9001<br>
 username = user<br>
 password = pass<br>
 </b>
+<br>
 
 ```sh
 sudo systemctl restart supervisor

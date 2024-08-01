@@ -48,3 +48,23 @@ sudo supervisorctl stop all
 sudo supervisorctl restart all
 ```
 
+# Enable Web Interface For Monitoring
+
+```sh
+sudo vim /etc/supervisor/supervisord.conf
+```
+
+```sh
+[inet_http_server]
+port = 127.0.0.1:9001
+username = user
+password = pass
+```
+
+```sh
+sudo systemctl restart supervisor
+```
+
+```sh
+http://127.0.0.1:9001
+```
